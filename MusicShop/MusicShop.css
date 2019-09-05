@@ -1,0 +1,130 @@
+html * {
+	font-family: Karma !important;
+}
+
+body {
+	margin: 0;
+	background-image: url("Icons/BackgroundImage.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color: #FFFFFF;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.SelenaDiscography div, .AvrilDiscography div {
+	box-sizing: border-box;
+	min-height: 150px;
+	min-width: 150px;
+}
+
+#SelenaDiscographyText, #AvrilDiscographyText {
+	font-size: 5vw;
+	text-align: center;
+	margin: 2%;
+}
+
+.KissAndTell, .AYearWithoutRain, .WhenTheSunGoesDown, .StarsDance, .ForYou, .Revival, .LetGo, .UnderMySkin, .TheBestDamnThing, .GoodbyeLullaby, .AvrilLavigne {
+	text-align: center;
+	width: 40%;
+	height: auto;
+	padding: 5px;
+	margin-bottom: 30px;
+}
+
+#KissAndTellCover, #AYearWithoutRainCover,  #WhenTheSunGoesDownCover, #StarsDanceCover, #ForYouCover, #RevivalCover, #LetGoCover, #UnderMySkinCover, #TheBestDamnThingCover, #GoodbyeLullabyCover, #AvrilLavigneCover{
+	width: 90%;
+}
+
+#KissAndTellTitle, #AYearWithoutRainTitle,  #WhenTheSunGoesDownTitle, #StarsDanceTitle, #ForYouTitle, #RevivalTitle, #LetGoTitle, #UnderMySkinTitle, #TheBestDamnThingTitle, #GoodbyeLullabyTitle, #AvrilLavigneTitle{
+	font-size:20px;
+}
+
+#KissAndTellDate, #AYearWithoutRainDate,  #WhenTheSunGoesDownDate, #StarsDanceDate, #ForYouDate, #RevivalDate, #LetGoDate, #UnderMySkinDate, #TheBestDamnThingDate, #GoodbyeLullabyDate, #AvrilLavigneDate{
+	font-size:15px;
+}
+
+.SelenaDiscography, .AvrilDiscography {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+@media (min-width: 800px) {
+	.KissAndTell, .AYearWithoutRain, .WhenTheSunGoesDown, .StarsDance, .ForYou, .Revival, .LetGo, .UnderMySkin, .TheBestDamnThing, .GoodbyeLullaby, .AvrilLavigne {
+		width: 16.5%;
+	}
+	
+	#SelenaSignature, #AvrilSignature {
+		width: 5%;
+	}
+}
+
+#RegisterForm {
+	padding-top: 1%;
+	padding-left: 35.9%;
+	width: 35%;
+	height: auto;
+}
+
+#LoginForm {
+	padding-top: 1%;
+	padding-left: 35.7%;
+	width: 35%;
+	height: auto;
+}
+
+#CartIcon {
+	width: 5%;
+	height: auto;
+	position: absolute;
+	top: 0;
+	right: 0%;
+}
+
+#VinylIcon {
+	width: 5%;
+	height: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.ResetCartButton {
+	display: flex;
+	justify-content: center;
+}
+
+#ResetCartButton {
+	border-radius: 50%;
+}
+
+.dot {
+	color: #000000;
+}
+
+#KissAndTellBoughtText, #AYearWithoutRainBoughtText, #WhenTheSunGoesDownBoughtText, #StarsDanceBoughtText, #ForYouBoughtText, #RevivalBoughtText, #LetGoBoughtText, #UnderMySkinBoughtText, #TheBestDamnThingBoughtText, #GoodbyeLullabyBoughtText, #AvrilLavigneBoughtText {
+	color: #000000;
+}
+
+#SelenaSignature {
+	width: 5%;
+	height: auto;
+	position: relative;
+	bottom: 0%;
+	left: 0;
+}
+
+#AvrilSignature {
+	width: 5%;
+	height: auto;
+	position: relative;
+	bottom: 0%;
+	right: -89%;
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+    <head>
+        <meta charset = "utf-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+		<link rel = "shortcut icon" type = "image/x-icon" href = "MusicShop/Icons/favicon.ico"/>
+		<link rel = "stylesheet" href = "https://fonts.googleapis.com/css?family=Karma">
+		<link rel = "stylesheet" href = "MusicShop/MusicShop.css">
+		<script src = "MusicShop/MusicShop.js"></script>
+		<title>Music Shop</title>
+    </head>
+    <body>
+		<form name = "register" id = "RegisterForm">
+			E-Mail <input type = "text" name = "regEmail"/>
+			Password <input type = "password" name = "regPassword"/>
+			<input type = "button" onclick = "handleRegister(this.form)" value = "Register"/>
+			<input type = "reset" value = "Clear"/>
+		</form>
+		
+		<form name = "login" id = "LoginForm">
+			Username <input type = "text" name = "logUsername"/>
+			Password <input type = "password" name = "logPassword"/>
+			<input type = "button" onclick = "handleLogin(this.form)" value = "Login"/>
+			<input type = "reset" value = "Clear"/>
+		</form>
+		
+		<img src = "MusicShop/Icons/Vinyl.png" id = "VinylIcon" alt = "Vinyl.png">
+		<img src = "MusicShop/Icons/Cart.png" id = "CartIcon" alt = "Cart.png">
+		
+		<div class = "dot">
+			.
+		</div>
+		
+		<div class = "ResetCartButton">
+			<button type = "button" id = "ResetCartButton" onclick = "resetCartItems()">Reset Cart</button>
+		</div>
+		
+		<div class = "ResetCartButton">
+			<p id = "CurrentCartItems">Cart items: 0</p>
+		</div>
+		
+		<p id = "SelenaDiscographyText">Selena Gomez Discography</p>
+		
+        <div class = "SelenaDiscography" role = "main">
+            <div class = "KissAndTell">
+				<img src = "MusicShop/SelenaGomez/Kiss&Tell.jpg" id = "KissAndTellCover" alt = "Kiss&Tell.jpg">
+				<h3 id = "KissAndTellTitle">Selena Gomez & The Scene - Kiss & Tell</h3>
+				<p id = "KissAndTellDate"> Released: 2009</p>
+				<button type = "button" id = "KissAndTellTracksButton" onclick = "showKissAndTellWiki()">Tracks</button>
+				<button type = "button" id = "KissAndTellBuyButton" onclick = "buyKissAndTellCD();countCartItems();">Buy</button>
+				<p id = "KissAndTellPrice"> Price: $10.58</p>
+				<p id = "KissAndTellBoughtText">.</p>
+			</div>
+			
+            <div class = "AYearWithoutRain">
+				<img src = "MusicShop/SelenaGomez/AYearWithoutRain.jpg" id = "AYearWithoutRainCover" alt = "AYearWithoutRain.jpg">
+				<h3 id = "AYearWithoutRainTitle">Selena Gomez & The Scene - A Year Without Rain</h3>
+				<p id = "AYearWithoutRainDate"> Released: 2010</p>
+				<button type = "button" id = "AYearWithoutRainTracksButton" onclick = "showAYearWithoutRainWiki()">Tracks</button>
+				<button type = "button" id = "AYearWithoutRainBuyButton" onclick = "buyAYearWithoutRainCD();countCartItems();">Buy</button>
+				<p id = "AYearWithoutRainPrice"> Price: $12.49</p>
+				<p id = "AYearWithoutRainBoughtText">.</p>
+			</div>
+			
+            <div class = "WhenTheSunGoesDown">
+				<img src = "MusicShop/SelenaGomez/WhenTheSunGoesDown.jpg" id = "WhenTheSunGoesDownCover" alt = "WhenTheSunGoesDown.jpg">
+				<h3 id = "WhenTheSunGoesDownTitle">Selena Gomez & The Scene - When The Sun Goes Down</h3>
+				<p id = "WhenTheSunGoesDownDate"> Released: 2011</p>
+				<button type = "button" id = "WhenTheSunGoesDownTracksButton" onclick = "showWhenTheSunGoesDownWiki()">Tracks</button>
+				<button type = "button" id = "WhenTheSunGoesDownBuyButton" onclick = "buyWhenTheSunGoesDownCD();countCartItems();">Buy</button>
+				<p id = "WhenTheSunGoesDownPrice"> Price: $10.00</p>
+				<p id = "WhenTheSunGoesDownBoughtText">.</p>
+			</div>
+			
+            <div class = "StarsDance">
+				<img src = "MusicShop/SelenaGomez/StarsDance.png" id = "StarsDanceCover" alt = "StarsDance.png">
+				<h3 id = "StarsDanceTitle">Selena Gomez - Stars Dance</h3>
+				<p id = "StarsDanceDate"> Released: 2013</p>
+				<button type = "button" id = "StarsDanceTracksButton" onclick = "showStarsDanceWiki()">Tracks</button>
+				<button type = "button" id = "StarsDanceBuyButton" onclick = "buyStarsDanceCD();countCartItems();">Buy</button>
+				<p id = "StarsDancePrice"> Price: $13.99</p>
+				<p id = "StarsDanceBoughtText">.</p>
+			</div>
+			
+            <div class = "ForYou">
+				<img src = "MusicShop/SelenaGomez/ForYou.png" id = "ForYouCover" alt = "ForYou.png">
+				<h3 id = "ForYouTitle">Selena Gomez - For You</h3>
+				<p id = "ForYouDate"> Released: 2014</p>
+				<button type = "button" id = "ForYouTracksButton" onclick = "showForYouWiki()">Tracks</button>
+				<button type = "button" id = "ForYouBuyButton" onclick = "buyForYouCD();countCartItems();">Buy</button>
+				<p id = "ForYouPrice"> Price: $14.98</p>
+				<p id = "ForYouBoughtText">.</p>
+			</div>
+			
+			<div class = "Revival">
+				<img src = "MusicShop/SelenaGomez/Revival.png" id = "RevivalCover" alt = "Revival.png">
+				<h3 id = "RevivalTitle">Selena Gomez - Revival</h3>
+				<p id = "RevivalDate"> Released: 2015</p>
+				<button type = "button" id = "RevivalTracksButton" onclick = "showRevivalWiki()">Tracks</button>
+				<button type = "button" id = "RevivalBuyButton" onclick = "buyRevivalCD();countCartItems();">Buy</button>
+				<p id = "RevivalPrice"> Price: $16.88</p>
+				<p id = "RevivalBoughtText">.</p>
+			</div>
+        </div>
+		
+		<p id = "AvrilDiscographyText"> Avril Lavigne Discography</p>
+		
+		<div class = "AvrilDiscography" role = "main">
+            <div class = "LetGo">
+				<img src = "MusicShop/AvrilLavigne/LetGo.png" id = "LetGoCover" alt = "LetGo.png">
+				<h3 id = "LetGoTitle">Avril Lavigne - Let Go</h3>
+				<p id = "LetGoDate"> Released: 2002</p>
+				<button type = "button" id = "LetGoTracksButton" onclick = "showLetGoWiki()">Tracks</button>
+				<button type = "button" id = "LetGoBuyButton" onclick = "buyLetGoCD();countCartItems();">Buy</button>
+				<p id = "LetGoPrice"> Price: $7.98</p>
+				<p id = "LetGoBoughtText">.</p>
+			</div>
+			
+            <div class = "UnderMySkin">
+				<img src = "MusicShop/AvrilLavigne/UnderMySkin.png" id = "UnderMySkinCover" alt = "UnderMySkin.png">
+				<h3 id = "UnderMySkinTitle">Avril Lavigne - Under My Skin</h3>
+				<p id = "UnderMySkinDate"> Released: 2004</p>
+				<button type = "button" id = "UnderMySkinTracksButton" onclick = "showUnderMySkinWiki()">Tracks</button>
+				<button type = "button" id = "UnderMySkinBuyButton" onclick = "buyUnderMySkinCD();countCartItems();">Buy</button>
+				<p id = "UnderMySkinPrice"> Price: $12.25</p>
+				<p id = "UnderMySkinBoughtText">.</p>
+			</div>
+			
+            <div class = "TheBestDamnThing">
+				<img src = "MusicShop/AvrilLavigne/TheBestDamnThing.png" id = "TheBestDamnThingCover" alt = "TheBestDamnThing.png">
+				<h3 id = "TheBestDamnThingTitle">Avril Lavigne - The Best Damn Thing</h3>
+				<p id = "TheBestDamnThingDate"> Released: 2007</p>
+				<button type = "button" id = "TheBestDamnThingTracksButton" onclick = "showTheBestDamnThingWiki()">Tracks</button>
+				<button type = "button" id = "TheBestDamnThingBuyButton" onclick = "buyTheBestDamnThingCD();countCartItems();">Buy</button>
+				<p id = "TheBestDamnThingPrice"> Price: $7.99</p>
+				<p id = "TheBestDamnThingBoughtText">.</p>
+			</div>
+			
+            <div class = "GoodbyeLullaby">
+				<img src = "MusicShop/AvrilLavigne/GoodbyeLullaby.png" id = "GoodbyeLullabyCover" alt = "GoodbyeLullaby.png">
+				<h3 id = "GoodbyeLullabyTitle">Avril Lavigne - Goodbye Lullaby</h3>
+				<p id = "GoodbyeLullabyDate"> Released: 2011</p>
+				<button type = "button" id = "GoodbyeLullabyTracksButton" onclick = "showGoodbyeLullabyWiki()">Tracks</button>
+				<button type = "button" id = "GoodbyeLullabyBuyButton" onclick = "buyGoodbyeLullabyCD();countCartItems();">Buy</button>
+				<p id = "GoodbyeLullabyPrice"> Price: $6.99</p>
+				<p id = "GoodbyeLullabyBoughtText">.</p>
+			</div>
+			
+            <div class = "AvrilLavigne">
+				<img src = "MusicShop/AvrilLavigne/AvrilLavigne.png" id = "AvrilLavigneCover" alt = "AvrilLavigne.png">
+				<h3 id = "AvrilLavigneTitle">Avril Lavigne - Avril Lavigne</h3>
+				<p id = "AvrilLavigneDate"> Released: 2013</p>
+				<button type = "button" id = "AvrilLavigneTracksButton" onclick = "showAvrilLavigneWiki()">Tracks</button>
+				<button type = "button" id = "AvrilLavigneBuyButton" onclick = "buyAvrilLavigneCD();countCartItems();">Buy</button>
+				<p id = "AvrilLavignePrice"> Price: $6.79</p>
+				<p id = "AvrilLavigneBoughtText">.</p>
+			</div>
+        </div>
+		
+		<img src = "MusicShop/Icons/SelenaSignature.png" id = "SelenaSignature" alt = "SelenaSignature.png">
+		<img src = "MusicShop/Icons/AvrilSignature.png" id = "AvrilSignature" alt = "AvrilSignature.png">
+    </body>
+</html>

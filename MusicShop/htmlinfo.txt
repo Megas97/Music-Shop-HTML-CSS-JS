@@ -1,0 +1,10 @@
+http://www.kabinata.com/wp/2018html/index.php?dir=mostly-fluid.html
+https://stackoverflow.com/questions/1358810/how-do-i-change-the-text-of-a-span-element-in-javascript
+https://www.daniweb.com/programming/web-development/code/330933/a-simple-html-login-page-using-javascript
+https://css-tricks.com/put-images-in-all-four-corners-with-css-positioning/
+https://css-tricks.com/perfect-full-page-background-image/
+https://stackoverflow.com/questions/2570972/css-font-border
+http://jsfiddle.net/PZYB6/1/
+https://stackoverflow.com/questions/7560832/how-to-center-a-button-within-a-div
+https://stackoverflow.com/questions/17925577/change-text-color-with-javascript
+https://stackoverflow.com/questions/9943771/adding-a-favicon-to-a-static-html-page
